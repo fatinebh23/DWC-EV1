@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        Math.PI
+        Math.E
+        Math.random
+        Math.pow(2, 5)
+        Math.sqrt
+        Math.min
+        Math.max
+        Math.floor //redonde el entero por debajo
+
+        //leer un numero por pantalla decimal y redondearlo por abajo
+        let numDec = parseFloat(prompt("Escriba un numero"))
+
+        console.log(Math.floor(numDec));
+
+        cont.array[1, 2, 3, 4, 5]
+
+        function devolverMax(arr) {
+            console.log(Math.max(...arr));
+
+        }
+
+        ///////
+
+
+        let numRandom = Math.floor(Math.random() * 10)
+        let advinarNum = false
+        while (!advinarNum) {
+            const numUsuario = parseInt(prompt("Adivina el num entre el 1-10"))
+            if (numUsuario === numRandom) {
+                alert("has acertado")
+                advinarNum = true
+
+            } else {
+                alert("No has acertado")
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

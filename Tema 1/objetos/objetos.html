@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Crea un onjeto tipo libro , com las siguintes propiedades titulo, autor,paginas, formatos(...pdf),precio y publicado(true o false ) y muestra por consola el ...
+        let libro = {
+            titulo: "Mundo",
+            autor: "Fatine",
+            paginas: 56,
+            formato: ["pdf", "txt", "word"],
+            precio: 23.86,
+            publicado: true
+
+
+        }
+
+        console.log(libro.autor + " " + libro.titulo + " " + libro.paginas + " " + libro.formato + " " + libro.precio + " " + libro.publicado);
+
+        console.log(libro["autor"]);
+
+        //Modificar el valor del precio 
+
+        libro["precio"] = 50
+        console.log(libro["precio"]);
+
+        //crea una funcion leer, invocarlas y devulvela por consola
+
+
+        let unlibro = {
+
+            leer: function () {
+                console.log("He leido el libro");
+            }
+
+        }
+        unlibro.leer();
+
+        //Crea una pagina web que contenga um objeto de la clase persona
+
+        let persona = {
+            nombre: "fatine",
+            apellidos: "bouhrich hmidi",
+            dni: "5264362l",
+            edad: 19,
+            altura: 1.63,
+            Estudios: false,
+                mostrarFrase: function () {
+                    alert("El usuario " + persona.nombre + " tiene " + persona.edad + " años y mide " + persona.altura + " cm y es " + esEstudiante);
+            }
+        }
+
+
+        esEstudiante = persona.Estudios ? "estudiante" : "no estudiante"
+
+        document.write("El usuario " + persona.nombre + " tiene " + persona.edad + " años y mide " + persona.altura + " cm y es " + persona.Estudios);
+
+        //estilo
+        document.write(`<h4> nombre: ${persona.nombre} </h3>`)
+        
+
+
+            ///////////////////////////////////////////////////////////////////////////////////
+
+            //Objeto coche con las propiedades marca, modelo, date
+            let coche = {
+            marca: "mercedes",
+            modelo: "clase c ",
+            date: "10-07-2022",
+            color:"rosa"
+          
+        }
+        // console.log(" La marca es :"+coche["marca"]);
+        // console.log(" La modelo es :"+coche["modelo"]);
+        // console.log(" La fecha es :"+coche["date"]);
+
+        coche["date"] = "05-07-2023"
+        coche["color"] = "rojo"
+
+        //eliminar una propiedad
+        delete coche.color
+        console.log(coche);
+
+        
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

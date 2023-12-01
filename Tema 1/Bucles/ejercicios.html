@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // //realiza un bucle con javaScript  que te lea un numero y 
+        // //que te diga si es primo o no
+
+
+        var numeroIngresado = prompt("Ingrese un número:");
+
+        if (numeroIngresado <= 1) {
+            console.log(numeroIngresado + " no es un número primo.");
+        } else {
+            let esPrimo = true;
+            //hola
+
+            for (let i = 2; i < numeroIngresado; i++) {
+                if (numeroIngresado % i === 0) {
+                    esPrimo = false;
+                    break;
+                }
+            }
+
+            if (esPrimo) {
+                console.log(numeroIngresado + " es un número primo.");
+            } else {
+                console.log(numeroIngresado + " no es un número primo.");
+            }
+        }
+
+
+
+        // //Introducir 5numeros.Calcular la suma de todo ellos .
+        // //Decir cuantos son mayores de 100
+
+        var suma = 0;
+        var mayoresDe100 = 0;
+
+        for (var i = 1; i <= 5; i++) {
+
+            var numero = prompt("Ingrese el número " + i + ":");
+            suma += parseInt(numero);
+
+            if (numero > 100) {
+                mayoresDe100++;
+            }
+        }
+
+        console.log("La suma de los números es: " + suma);
+        console.log("Hay " + mayoresDe100 + " números mayores de 100.");
+
+
+
+        // Realiza un programa no lea por pantalla valores incorrectos .Mientras 
+        //el valor sea <10 debe leer.Utiliza parseInt y documentWrite 
+        //para escibir en la pagina web todos los valores leidos
+
+
+        var valor = prompt("Ingrese un número:");
+
+
+        while (valor < 10) {
+            alert(valor)
+
+
+        }
+
+
+
+        //Realizar progrma en el que el usuario introduce
+        //el numero del mes (1 a 12) y el codigo responde 
+        //si ese mes tiene 30 o 31 dias
+
+
+        var mes = prompt("Ingrese un Introduce el mes:");
+
+        if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 10) {
+            alert("Este mes tiene 31 dias")
+
+        } else {
+            if (mes == 2) {
+                alert("Este mes tiene 28 dias")
+            } else {
+                alert("Este mes tiene 30 dias")
+            }
+
+        }
+     
+
+
+    </script>
+
+</body>
+
+</html>

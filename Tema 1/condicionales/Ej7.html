@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 7.Realiza un programa que lea 2 números por consola y al más grande le reste el más
+            pequeño. -->
+    <script>
+        // Solicitar al usuario que ingrese dos números
+        var num1 = parseFloat(prompt("Ingrese el primer número:"));
+        var num2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+        // Verificar si los valores ingresados son números válidos
+        if (!isNaN(num1) && !isNaN(num2)) {
+            // Encontrar el número más grande y el más pequeño
+            var mayor = Math.max(num1, num2);
+            var menor = Math.min(num1, num2);
+
+            // Restar el número más pequeño al más grande
+            var resultado = mayor - menor;
+
+            // Mostrar el resultado por consola
+            console.log(`La resta del número más grande (${mayor}) menos el más pequeño (${menor}) es: ${resultado}`);
+        } else {
+            console.log("Por favor, ingrese números válidos.");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

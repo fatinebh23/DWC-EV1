@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let numArray = [1, 2, 3, 4, 1, 2, 1, 4, 5]
+        let stringArray = ["uno", "dos", "tres"]
+        let objArray = [{ nombre: "fatine", edad: 19 }]
+        let metArray = [[2, 5][3, 6]]
+
+        console.log("Lomgitud numArray" + numArray.length);
+        console.log("Ultima posicion numArray " + numArray[2]);
+
+
+        //Calcular la suma de todos los elementos en un array
+        var suma = 0
+        for (let index = 0; index < numArray.length; index++) {
+            var valor = numArray[index]
+            var suma = suma + valor
+
+        }
+        console.log("La suma de " + numArray + "es" + suma);
+
+        //Encontrar el numero mas grande del array
+
+        var max = 0
+        for (let index = 0; index < numArray.length; index++) {
+            if (numArray[i] > max) {
+                max = numArray[i]
+
+            }
+
+        }
+
+
+        console.log(max);
+
+        //Contar la frecuencia de elementos de un array
+
+
+        var frecuencias = {};
+
+        for (var i = 0; i < numArray.length; i++) {
+            var elemento = numArray[i];
+
+            if (frecuencias[elemento]) {
+                frecuencias[elemento]++;
+            } else {
+                frecuencias[elemento] = 1;
+            }
+        }
+
+        console.log(frecuencias);
+
+        //la media de un array
+        var media=0
+        var suma = 0
+        for (let index = 0; index < numArray.length; index++) {
+            suma += numArray[index]
+            
+
+        }
+        let media = suma/numArray
+
+        console.log(media);
+        
+
+
+    </script>
+</body>
+
+</html>

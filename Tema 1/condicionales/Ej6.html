@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Realiza un programa que determina si el número leído por consola es positivo,
+negativo o zero. -->
+
+    <script>
+
+        // Solicitar al usuario que ingrese un número
+        var numero = parseFloat(prompt("Ingrese un número:"));
+
+        // Verificar si el valor ingresado es un número válido
+        if (!isNaN(numero)) {
+            // Determinar si el número es positivo, negativo o cero
+            if (numero > 0) {
+                console.log("El número ingresado es positivo.");
+            } else if (numero < 0) {
+                console.log("El número ingresado es negativo.");
+            } else {
+                console.log("El número ingresado es igual a cero.");
+            }
+        } else {
+            console.log("Por favor, ingrese un número válido.");
+        }
+
+        
+
+    </script>
+</body>
+
+</html>

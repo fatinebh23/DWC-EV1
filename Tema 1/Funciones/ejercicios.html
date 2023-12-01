@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Declara una funcion que calcule el volumen de un cono declarando 2 variables de radio y altura y que te lo muestre por pantalla.
+        //La funcion tiene que ddevolver un volumen
+
+        var radio = 3
+        var altura = 5
+
+        function volumen(r, a) {
+            return (r ** 2) * (Math.PI * a) / 3
+
+
+        }
+        console.log(volumen(radio, altura));
+
+
+        //El maximo de tres enteros y lo muestre por consola
+        var num1 = 2
+        var num2 = 4
+        var num3 = 7
+        function maximo(num1, num2, num3) {
+            if (num1 > num2) {
+                console.log(num1);
+
+            } else {
+                if (num2 > num3) {
+                    console.log(num2);
+                } else {
+                    console.log(num3);
+                }
+
+            }
+
+
+        }
+        console.log(maximo(num1, num2, num3));
+
+
+        //una funcion que pase de grados celsius a farenhaiy y los muestre por consola
+
+        var grados = prompt("Ingrese los grados celsius:");
+
+        function pasargrados(celsius) {
+
+            return (celsius * 9 / 5) + 32
+
+        }
+        console.log(pasargrados(grados));
+
+
+        //una funcion que reciba dos strings y los concatene
+        var palabra1 = prompt("Ingrese la primera palabra:");
+        var palabra2 = prompt("Ingrese la segunda palabra:");
+
+        function concatenar(palabra1, palabra2) {
+
+            return palabra1 + " " + palabra2
+
+        }
+        alert(concatenar(palabra1, palabra2))
+
+
+
+        //Una funcion que calcule la potencia de un numero dado su base y exponente
+        var base = prompt("Ingrese la base:");
+        var exponente = prompt("Ingrese el exponente:");
+
+        function calcular(base, exponente) {
+
+            return base ** exponente
+
+        }
+        alert(calcular(base, exponente))
+
+
+    </script>
+</body>
+
+</html>

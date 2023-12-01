@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+// Realiza un programa que lea 3 números por consola y devuelva el mayor de ellos.
+
+var num1 = parseFloat(prompt("Ingrese el primer número:"));
+var num2 = parseFloat(prompt("Ingrese el segundo número:"));
+var num3 = parseFloat(prompt("Ingrese el tercer número:"));
+
+// Verificar si los valores ingresados son números válidos
+if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+    // Encontrar el número mayor
+    var mayor = Math.max(num1, num2, num3);
+
+    // Mostrar el resultado por consola
+    alert("El número mayor es: " + mayor);
+} else {
+    console.log("Por favor, ingrese números válidos.");
+}
+
+
+    </script>
+</body>
+
+</html>

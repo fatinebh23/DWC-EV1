@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Realiza una suma de 2 valores dentro de una funcion y que te muestre en consola el valor de las sumas 
+
+        function suma(a, b) {
+            console.log(a + b);
+        }
+
+        suma(3, 6)
+        suma(4, 5)
+
+
+        //Asignar una variable a la funcion y mostrarlo por consola 
+
+        function suma(a, b) {
+            console.log(a + b);
+        }
+
+        var resultado = suma(5, 9)
+
+        ///////////////////////////////////////////
+
+        function saludar(nombre) {
+            return "hola " + nombre
+        }
+
+        console.log(saludar);
+
+        ////////////////////////////////////////
+        
+        var valor = "global"
+        function functionlocal() {
+            var valor = "local"
+            return valor;
+
+        }
+        console.log(valor);
+        console.log(functionlocal());
+        console.log(valor);
+
+        ///////////////////////////////////
+
+        var valor = 5
+        function sumar2(a,b) {
+            varresultado = (a+b)
+            console.log("La suma es "+resultado);
+
+        }
+        sumar2(3, 6)
+        sumar2(4, 5)
+        sumar2()
+
+
+
+
+
+    </script>
+</body>
+
+</html>

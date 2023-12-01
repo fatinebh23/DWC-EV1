@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // //SWITCH-CASE
+
+        // //Realizable  una progrma que utilzando la sentencia switch-case 
+        // //que te lea un valor del semaforo, en caso deverde que muestre por 
+        // //consola adelante, rojo-stop y ambar-precaucion
+
+        var semaforo = prompt("Color del semaforo: ", '')
+
+        switch (semaforo) {
+
+            case "rojo":
+                alert("Stop")
+                break;
+
+            case "ambar":
+                alert("Precaucion")
+                break;
+
+
+            case "verde":
+                alert("Adelante")
+                break;
+
+        }
+
+        // //WHILE
+
+        alert("While")
+        var x = prompt("Introduce un valor menor que 10 ", "")
+        while (x < 10) {
+            alert(x)
+            x++;
+        }
+
+
+        ///DO WHILE
+        alert("DO WHILE")
+        x = prompt("Introduce un valor menor que 10 ", "")
+        do {
+            alert(x)
+            x++
+            alert(x)
+        } while (x < 10)
+
+
+        var x = prompt = ("Introduce un valor menor que 10 ", "")
+        for (x; x < a10; x++) {
+            alert(x)
+
+        }
+
+
+        alert("FOR")
+        // //Introducir 5numeros.Calcular la suma de todo ellos .
+        // //Decir cuantos son mayores de 100
+
+        var suma = 0;
+        var mayoresDe100 = 0;
+
+        for (var i = 1; i <= 5; i++) {
+
+            var numero = prompt("Ingrese el número " + i + ":");
+            suma += parseInt(numero);
+
+            if (numero > 100) {
+                mayoresDe100++;
+            }
+        }
+
+        console.log("La suma de los números es: " + suma);
+        console.log("Hay " + mayoresDe100 + " números mayores de 100.");
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Solicitar al usuario que ingrese la cantidad en dólares
+        var dolares = parseFloat(prompt("Ingrese la cantidad en dólares:"));
+
+        // Tasa de cambio actual (puedes cambiar este valor según la tasa de cambio actual)
+        var tasaCambio = 0.85; // 1 dólar = 0.85 euros
+
+        // Verificar si la entrada es un número válido
+        if (!isNaN(dolares)) {
+            // Convertir dólares a euros
+            var euros = dolares * tasaCambio;
+
+            // Mostrar el resultado por consola
+            console.log(`${dolares} dólares son aproximadamente ${euros.toFixed(2)} euros.`);
+        } else {
+            console.log("Por favor, ingrese una cantidad válida en dólares.");
+        }
+    </script>
+</body>
+
+</html>
