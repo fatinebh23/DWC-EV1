@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         14.Realiza un programa que calcule el precio de la estancia en un camping. Leerá por
+        // consola el número de personas y días. La tarifa estándar es de 15 €/noche, pero si son
+        // más de 5 personas y se quedan al menos una semana el precio se reduce un 25%.
+
+
+        // Solicitar al usuario el número de personas y días por consola
+        var numeroPersonas = parseInt(prompt("Ingrese el número de personas:"));
+        var numeroDias = parseInt(prompt("Ingrese el número de días:"));
+
+        // Definir la tarifa estándar por noche
+        var tarifaPorNoche = 15;
+
+        // Calcular el precio total sin descuento
+        var precioSinDescuento = numeroPersonas * numeroDias * tarifaPorNoche;
+
+        // Verificar si se aplica el descuento (más de 5 personas y al menos una semana)
+        if (numeroPersonas > 5 && numeroDias >= 7) {
+            // Calcular el descuento del 25%
+            var descuento = 0.25 * precioSinDescuento;
+
+            // Calcular el precio total con descuento
+            var precioConDescuento = precioSinDescuento - descuento;
+
+            console.log(`El precio total con un 25% de descuento es: ${precioConDescuento} €.`);
+        } else {
+            console.log(`El precio total sin descuento es: ${precioSinDescuento} €.`);
+        }
+    </script>
+</body>
+
+</html>

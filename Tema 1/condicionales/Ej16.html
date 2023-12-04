@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         16.Realiza un programa que si lee por consola ‘D’ convierte euros a dólares la cantidad
+        // introducida y si lee por consola ‘E’ convierte dolares a euros
+
+        // Solicitar al usuario ingresar una letra ('D' o 'E') por consola
+        var opcion = prompt("Ingrese 'D' para convertir de euros a dólares o 'E' para convertir de dólares a euros:");
+
+        // Convertir la letra a mayúscula para evitar problemas de mayúsculas/minúsculas
+        opcion = opcion.toUpperCase();
+
+        // Verificar la opción ingresada
+        if (opcion === 'D') {
+            // Convertir de euros a dólares
+            var cantidadEuros = parseFloat(prompt("Ingrese la cantidad en euros:"));
+            var tasaCambioEuroDolar = 1.18; // Ejemplo de tasa de cambio
+            var cantidadDolares = cantidadEuros * tasaCambioEuroDolar;
+            console.log(`${cantidadEuros} euros equivalen a ${cantidadDolares.toFixed(2)} dólares.`);
+        } else if (opcion === 'E') {
+            // Convertir de dólares a euros
+            var cantidadDolares = parseFloat(prompt("Ingrese la cantidad en dólares:"));
+            var tasaCambioDolarEuro = 0.85; // Ejemplo de tasa de cambio
+            var cantidadEuros = cantidadDolares * tasaCambioDolarEuro;
+            console.log(`${cantidadDolares} dólares equivalen a ${cantidadEuros.toFixed(2)} euros.`);
+        } else {
+            console.log("Opción no válida. Por favor, ingrese 'D' o 'E'.");
+        }
+    </script>
+</body>
+
+</html>

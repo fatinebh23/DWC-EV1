@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //11. Realiza un programa que indique si los 3 números enteros que pedimos por
+        //consola son consecutivos o no.
+
+
+        // Solicitar al usuario tres números enteros por consola
+        var num1 = parseInt(prompt("Ingrese el primer número entero:"));
+        var num2 = parseInt(prompt("Ingrese el segundo número entero:"));
+        var num3 = parseInt(prompt("Ingrese el tercer número entero:"));
+
+        // Verificar si los números son consecutivos
+        if ((num1 + 1 === num2 && num2 + 1 === num3) || (num1 - 1 === num2 && num2 - 1 === num3)) {
+            console.log("Los números son consecutivos.");
+        } else {
+            console.log("Los números no son consecutivos.");
+        }
+
+        
+    </script>
+</body>
+
+</html>

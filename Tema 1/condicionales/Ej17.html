@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         17.Realiza un programa que si lee por consola 0, muestra la superficie y el perímetro
+        // de un cuadrado; si lee 1, muestra la superficie y el perímetro de un rectángulo; y si lee
+        // 2, muestra la superficie de un triángulo. Todos los valores se leen por consola. Si no es
+        // una opción válida se indica por consola que ha habido un error.
+        // Solicitar al usuario ingresar un número (0, 1 o 2) por consola
+        var opcion = parseInt(prompt("Ingrese 0 para cuadrado, 1 para rectángulo, o 2 para triángulo:"));
+
+        // Variables para almacenar los resultados
+        var superficie, perimetro;
+
+        // Verificar la opción ingresada
+        switch (opcion) {
+            case 0:
+                // Cuadrado
+                var ladoCuadrado = parseFloat(prompt("Ingrese el lado del cuadrado:"));
+                superficie = ladoCuadrado * ladoCuadrado;
+                perimetro = 4 * ladoCuadrado;
+                console.log(`Cuadrado - Superficie: ${superficie}, Perímetro: ${perimetro}`);
+                break;
+            case 1:
+                // Rectángulo
+                var largoRectangulo = parseFloat(prompt("Ingrese el largo del rectángulo:"));
+                var anchoRectangulo = parseFloat(prompt("Ingrese el ancho del rectángulo:"));
+                superficie = largoRectangulo * anchoRectangulo;
+                perimetro = 2 * (largoRectangulo + anchoRectangulo);
+                console.log(`Rectángulo - Superficie: ${superficie}, Perímetro: ${perimetro}`);
+                break;
+            case 2:
+                // Triángulo
+                var baseTriangulo = parseFloat(prompt("Ingrese la base del triángulo:"));
+                var alturaTriangulo = parseFloat(prompt("Ingrese la altura del triángulo:"));
+                superficie = 0.5 * baseTriangulo * alturaTriangulo;
+                console.log(`Triángulo - Superficie: ${superficie}`);
+                break;
+            default:
+                console.log("Opción no válida. Por favor, ingrese 0, 1 o 2.");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

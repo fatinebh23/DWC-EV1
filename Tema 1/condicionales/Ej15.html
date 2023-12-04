@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         15.Realiza un programa que lee el número de un mes y el año e indica por
+        // consola el número de días del mes (piensa en que el año puede ser bisiesto).
+
+
+        // Solicitar al usuario el número de un mes y un año por consola
+        var numeroMes = parseInt(prompt("Ingrese el número de un mes (1-12):"));
+        var año = parseInt(prompt("Ingrese un año:"));
+
+        // Verificar si el año es bisiesto
+        var esBisiesto = (año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0);
+
+        // Determinar el número de días del mes
+        var diasDelMes;
+
+        switch (numeroMes) {
+            case 1: // enero
+            case 3: // marzo
+            case 5: // mayo
+            case 7: // julio
+            case 8: // agosto
+            case 10: // octubre
+            case 12: // diciembre
+                diasDelMes = 31;
+                break;
+            case 4: // abril
+            case 6: // junio
+            case 9: // septiembre
+            case 11: // noviembre
+                diasDelMes = 30;
+                break;
+            case 2: // febrero
+                diasDelMes = esBisiesto ? 29 : 28;
+                break;
+            default:
+                console.log("Número de mes inválido.");
+                break;
+        }
+
+        // Mostrar el número de días del mes por consola
+        if (numeroMes >= 1 && numeroMes <= 12) {
+            console.log(`El mes ${numeroMes} del año ${año} tiene ${diasDelMes} días.`);
+        }
+
+    </script>
+</body>
+
+</html>

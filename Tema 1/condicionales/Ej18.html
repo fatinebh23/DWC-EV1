@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         18.Realiza un programa que calcula la raíz cuadrada de un número. Si el número es
+        // negativo debe mostrar un mensaje de error.
+
+        // Solicitar al usuario ingresar un número por consola
+        var numero = parseFloat(prompt("Ingrese un número:"));
+
+        // Verificar si el número es negativo
+        if (numero >= 0) {
+            // Calcular la raíz cuadrada
+            var raizCuadrada = Math.sqrt(numero);
+            console.log(`La raíz cuadrada de ${numero} es ${raizCuadrada.toFixed(2)}.`);
+        } else {
+            console.log("Error: No se puede calcular la raíz cuadrada de un número negativo.");
+        }
+    </script>
+</body>
+
+</html>

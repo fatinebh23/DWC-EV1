@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 12.Realiza un programa que lea 3 números por consola y los muestre ordenados de
+        // mayor a menor.
+
+        // Solicitar al usuario tres números por consola
+        var num1 = parseFloat(prompt("Ingrese el primer número:"));
+        var num2 = parseFloat(prompt("Ingrese el segundo número:"));
+        var num3 = parseFloat(prompt("Ingrese el tercer número:"));
+
+        // Ordenar los números de mayor a menor
+        // los números se colocan en un array y se utiliza la función sort para ordenarlos de mayor a menor.
+        var numerosOrdenados = [num1, num2, num3].sort(function (a, b) {
+            return b - a;
+        });
+
+        // Mostrar los números ordenados
+        console.log("Números ordenados de mayor a menor:", numerosOrdenados[0], numerosOrdenados[1], numerosOrdenados[2]);
+
+
+    </script>
+</body>
+
+</html>
