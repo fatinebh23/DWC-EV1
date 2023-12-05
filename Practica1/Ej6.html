@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 6. Introducir una cadena. Decir la longitud de la cadena. Pasarla a mayúsculas y a
+        // minúsculas. Después al revés. Ej: Introduce una cadena: La casa de Maria.
+        // Ej: Introduce una cadena: La casa de Maria
+        // La longitud de la cadena es 11 caracteres
+        // La cadena en mayúsculas es LA CASA DE MARIA
+        // La cadena en minúsculas es la casa de maria
+        // CADENA AL REVÉS
+        // Maria
+        // de
+        // casa
+        // La
+
+        string = prompt('Introduzca una cadena : ', '');
+
+
+        document.write(string)
+        document.write("<br>")
+        document.write(" La longitud de la cadena es " + string.length + " caracteres")
+        document.write("<br>")
+
+        document.write(" La cadena en mayúsculas es " + string.toUpperCase());
+        document.write("<br>")
+        document.write(" La cadena en minuscula es " + string.toLowerCase());
+        document.write("<br>")
+
+        let arrayCadenas = string.split(" ");
+        let array = []
+        let cadenaReverse = " ";
+
+        for (let i = arrayCadenas.length -1;i>=0;i--) {
+            const element = arrayCadenas[i];
+            array.push(element)
+            cadenaReverse += element + " "
+
+        }
+        document.write(" La cadena al reves es " + cadenaReverse);
+
+    </script>
+</body>
+
+</html>

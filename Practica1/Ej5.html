@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // 5.Introducir el precio de un artículo. Calcular el iva y el precio total (con el iva incluido)
+        // que debe salir redondeado a dos decimales.
+
+
+        // Solicitar al usuario el número de personas y días por consola
+        var precioArticulo = parseInt(prompt("Ingrese el precio del articulo"));
+
+        // Calcular el precio total con descuento
+        var descuento = 0.21 * precioArticulo;
+        var precioConDescuento = precioArticulo - descuento;
+
+
+        console.log(`El precio total con un 21% de descuento es: ${precioConDescuento.toFixed(2)} €.`);
+    </script>
+</body>
+
+</html>

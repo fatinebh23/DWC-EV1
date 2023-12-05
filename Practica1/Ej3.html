@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 3.Introducir un mes y decir a que estación pertenece:
+        // Ej: Dime un mes: enero
+        // Estamos en Invierno
+        // (Nota: No hace falta ninguna comprobación. Los meses diciembre, enero, febrero serán
+        // invierno, marzo, abril y mayo serán primavera, junio, julio y agosto serán verano y
+        // septiembre, octubre y noviembre será (otoño)
+
+        var mes = prompt("Introduce un mes ", '')
+
+        switch (mes) {
+
+            case "diciembre":
+            case "enero":
+            case "febrero":
+                alert("Invierno")
+                break;
+
+            case "marzo":
+            case "abril":
+            case "mayo":
+                alert("Primavera")
+                break;
+
+
+            case "junio":
+            case "julio":
+            case "agosoto":
+                alert("Verano")
+                break;
+
+
+            case "septiembre":
+            case "octubre":
+            case "noviembre":
+                alert("Otoño")
+                break;
+           
+        }
+
+    </script>
+</body>
+
+</html>
