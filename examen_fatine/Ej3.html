@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         Crea un array con 4 strings, que te lea por pantalla una cadena y que te diga true si
+        // está, mostrándolo por consola.
+
+        let array = ["Hola", "Buenos", "Dias", "Sol"];
+
+        let palabra = prompt("Introduzca una palabra:")
+
+        estapalabra = false;
+
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+
+            if (element === palabra) {
+                estapalabra = true
+
+            } else {
+                estapalabra = false
+
+            }
+
+        }
+        console.log(estapalabra);
+    </script>
+</body>
+
+</html>

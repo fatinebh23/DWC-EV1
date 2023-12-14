@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         4.Crea una página web con un script que contenga un objeto, la cual tendrá los atributos
+        // descritos después. El objeto debe crearse dentro del script al igual que el contenido
+        // web. Para mostrar el contenido en la web hay que hacerlo con la variables del
+        // objeto(propiedades):
+
+        
+
+        let estudiante = {
+            nombre: "Fatine",
+            apellidos: "Bouhrich",
+            dni: "6532014L",
+            edad: 19,
+            altura: 160,
+            estudios: "DAw",
+
+        }
+        document.write("DATOS ESTUDIANTE: ")
+        document.write("<br>")
+        document.write(`Nombre: ${estudiante.nombre}`)
+        document.write("<br>")
+        document.write(`Apellidos: ${estudiante.apellidos}`)
+        document.write("<br>")
+        document.write(`Dni: ${estudiante.dni}`)
+        document.write("<br>")
+        document.write(`Edad: ${estudiante.edad}`)
+        document.write("<br>")
+        document.write(`Altura: ${estudiante.altura}`)
+        document.write("<br>")
+        document.write(`Estudios: ${estudiante.estudios}`)
+        // Una vez creado el objeto, se deberá mostrar por pantalla: Nombre: “nombre del
+        // objeto” Apellidos: “apellido del objeto”, DNI:”DNI del objeto” y así hasta Estudios
+        // ”Estudios del objeto”.
+
+        alert(`Nombre: ${estudiante["nombre"]},Apellidos: ${estudiante["apellidos"]},DNI: ${estudiante["dni"]},Edad: ${estudiante["edad"]},Altura: ${estudiante["altura"]},Estudios: ${estudiante["estudios"]} `)
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

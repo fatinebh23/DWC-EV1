@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//        7.Haz un programa que calcule un número aleatorio de la lotería de Navidad (de 0 a 100)
+// y después pida al usuario por consola hasta 5 números indicando cada vez si ha ganado
+// la lotería o no. 
+
+//aqui genero un numero random del 1-100
+const numeroLoteria = Math.floor(Math.random() * 100);
+
+console.log(`Bienvenido a la lotería de Navidad! 
+El número ganador es: ${numeroLoteria}`);
+
+let intentos = 5;
+let ganador = false;
+
+while (intentos > 0) {
+    let numeroUsuario = parseInt(prompt(`Introduce un número entre 0 y 100 (Intentos : ${intentos}):`));
+
+    if (isNaN(numeroUsuario) || numeroUsuario < 0 || numeroUsuario > 100) {
+        console.log('Por favor,introduce un número válido entre 0 y 100.');
+    } else {
+        if (numeroUsuario === numeroLoteria) {
+            ganador = true;
+            console.log('Felicidades! Has ganado la lotería de Navidad.');
+            break;
+        } else {
+            console.log('Lo siento, tu número no coincide con el número ganador.');
+        }
+        intentos--;
+    }
+}
+
+if (!ganador) {
+    console.log('Gracias por participar en la lotería de Navidad!');
+}
+
+    </script>
+</body>
+</html>

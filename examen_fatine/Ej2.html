@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //        2. Realiza un bucle que lea un número y que te diga si es primo o no. Un número primo
+        // sólo es divisible por él mismo y por la unidad. Que te muestre el resultado en una
+        // pantalla emergente.
+        var numeroIngresado = prompt("Ingrese un número:");
+
+        if (numeroIngresado <= 1) {
+            console.log(numeroIngresado + " no es un número primo.");
+        } else {
+            let esPrimo = true;
+            //hola
+
+            for (let i = 2; i < numeroIngresado; i++) {
+                if (numeroIngresado % i === 0) {
+                    esPrimo = false;
+                    break;
+                }
+            }
+
+            if (esPrimo) {
+                console.log(numeroIngresado + " es un número primo.");
+            } else {
+                console.log(numeroIngresado + " no es un número primo.");
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
